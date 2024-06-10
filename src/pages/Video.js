@@ -8,7 +8,6 @@ import RelatedVideoList from '../components/list/RelatedVideoList';
 const Video = () => {
     return (
         <>
-            <Navbar></Navbar>
 
             <section class="pt-6 pb-20">
             <div class="mx-auto max-w-7xl px-2 pb-20 min-h-[400px]">
@@ -28,7 +27,6 @@ const Video = () => {
             </div>
         </section>
 
-            <Footer></Footer>
         </>
     );
 };
