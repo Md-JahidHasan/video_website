@@ -19,7 +19,7 @@ const VideoDescription = ({video}) => {
                                 </h2>
 
                                 {/* <!-- like/unlike --> */}
-                                <LikeUnlike></LikeUnlike>
+                            <LikeUnlike video= {video}></LikeUnlike>
                             </div>
 
                             <div

@@ -18,6 +18,11 @@ export const fetchSingleVideo = createAsyncThunk('video/fetchSingleVideo', async
 const singleVideoSlice = createSlice({
     name: 'video',
     initialState,
+    reducers: {
+        increaseLike: (state) => {
+            state.video.like += 1
+        }
+    },
     extraReducers: (builder) => {
         builder
             .addCase(fetchSingleVideo.pending, (state, action) => {
@@ -37,5 +42,7 @@ const singleVideoSlice = createSlice({
         } )
     }
 })
+
+export const { increaseLike} = singleVideoSlice.reducer;
 
 export default singleVideoSlice.reducer;

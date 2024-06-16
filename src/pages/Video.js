@@ -41,8 +41,7 @@ const Video = () => {
                     </div>
 
                     {/* <!-- related videos --> */}
-                    <RelatedVideoList></RelatedVideoList>
-                    
+                    <RelatedVideoList currentVideoId ={video.id} tags={video.tags}></RelatedVideoList>
                 </div>
     }
 
