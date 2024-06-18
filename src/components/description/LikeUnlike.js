@@ -4,31 +4,31 @@ import UnLikeButton from './../../assets/unlike.svg'
 
 const LikeUnlike = ({video}) => {
     return (
-        <div class="flex gap-10 w-48">
-                                    <div class="flex gap-1">
-                                        <button class="shrink-0">
+        <div className="flex gap-10 w-48">
+                                    <div className="flex gap-1">
+                                        <button className="shrink-0">
                                             <img
-                                                class="w-5 block"
+                                                className="w-5 block"
                                                 src={LikeButton}
                                                 alt="Like"
                                             />
                                         </button>
                                         <div
-                                            class="text-sm leading-[1.7142857] text-slate-600"
+                                            className="text-sm leading-[1.7142857] text-slate-600"
                                         >
                                             100K
                                         </div>
                                     </div>
-                                    <div class="flex gap-1">
-                                        <div class="shrink-0">
+                                    <div className="flex gap-1">
+                                        <div className="shrink-0">
                                             <img
-                                                class="w-5 block"
+                                                className="w-5 block"
                                                 src={UnLikeButton}
                                                 alt="Unlike"
                                             />
                                         </div>
                                         <div
-                                            class="text-sm leading-[1.7142857] text-slate-600"
+                                            className="text-sm leading-[1.7142857] text-slate-600"
                                         >
                                             100K
                                         </div>

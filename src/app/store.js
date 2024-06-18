@@ -3,7 +3,8 @@ import counterReducer from '../features/counter/counterSlice';
 import videoReducer from '../features/videos/videoSlice';
 import tagsReducer from '../features/tags/tagsSlice';
 import singleVideoReducer from '../features/video/singleVideoSlice';
-import relatedVideosReducer from '../features/relatedVideos/relatedVideosSlice'
+import relatedVideosReducer from '../features/relatedVideos/relatedVideosSlice';
+import filterReducer from '../features/filters/filtersSlice';
 
 export const store = configureStore({
   reducer: {
@@ -11,6 +12,7 @@ export const store = configureStore({
     videos: videoReducer,
     tags: tagsReducer,
     video: singleVideoReducer,
-    relatedVideos: relatedVideosReducer
+    relatedVideos: relatedVideosReducer,
+    filters: filterReducer
   }
 });
